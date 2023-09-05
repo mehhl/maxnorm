@@ -27,7 +27,7 @@ Here is an [example](https://github.com/mehlsson/maxnorm/blob/main/example.ipynb
 
 ##### Rationale
 
-The max-norm constraint is essentially an additional normalization constraint applied after each optimization steps; the optimizer checks for each unit if its incoming weight vector $ {\boldsymbol w} $ has some $p$-norm $ \lVert {\boldsymbol w} \rVert_p $ greater than or equal than some scalar max norm, and normalizes it if it does not. From what I've seen, its use is mostly associated with the use of the dropout technique. This constraint can be used out-of-the-box in Keras (as `tf.keras.constraint.MaxNorm`), but I couldn't find any out-of-the-box implementation for PyTorch.
+The max-norm constraint is essentially an additional normalization constraint applied after each optimization steps; the optimizer checks for each unit if its incoming weight vector $ {\bf w} $ has some $p$-norm $ \lVert {\bf w} \rVert_p $ greater than or equal than some scalar max norm, and normalizes it if it does not. From what I've seen, its use is mostly associated with the use of the dropout technique. This constraint can be used out-of-the-box in Keras (as `tf.keras.constraint.MaxNorm`), but I couldn't find any out-of-the-box implementation for PyTorch.
 
 ##### To-do in near future
 
