@@ -1,3 +1,5 @@
+# A wrapper to add max_norm weight correction capability to PyTorch SGD optimizer.
+
 import torch
 
 class MNSGD(torch.optim.SGD):    
